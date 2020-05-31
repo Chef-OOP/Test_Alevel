@@ -26,6 +26,8 @@ namespace Test_Alevel.ApiService.AuthService
         }
         public async Task<bool> Login(AppUserLoginDto appUser)
         {
+            appUser.CustomerId = Convert.ToInt32((context.HttpContext.Request.Cookies["customer"]));
+            
             string jsonData = JsonConvert.SerializeObject(appUser);
             var stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync("Auth/Login", stringContent);
