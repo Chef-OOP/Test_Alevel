@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "Save";
+}
+
+<h1>Save</h1>
+<form method="post" action="https://localhost:44331/api/Auth/Register" enctype="multipart/form-data">
+    @*<div class="form-group">
+        <label for="UserName">UserName</label>
+        <input name="UserName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="UserName">
+    </div>*@
+    <div class="form-group">
+        <label for="FirstName">Name</label>
+        <input name="FirstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="FirstName">
+    </div>
+
+    <div class="form-group">
+        <label for="LastName">LastName</label>
+        <input name="LastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="LastName">
+    </div>
+
+    @*<div class="form-group">
+        <label for="TCKN">TCKN</label>
+        <input name="TCKN" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="TCKN">
+    </div>*@
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+    </div>
+
+    @*<div class="form-group">
+        <label for="AllowEmail">AllowEmail</label>
+        <input name="AllowEmail" type="checkbox" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="AllowEmail">
+    </div>
+
+    <div class="form-group">
+        <label for="AllowSms">AllowSms</label>
+        <input name="AllowSms" type="checkbox" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="AllowSms">
+    </div>*@
+
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input name="Password" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+    </div>
+
+    @*<div class="form-group">
+        <label for="ConfirmPassword">ConfirmPassword</label>
+        <input name="ConfirmPassword" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ConfirmPassword">
+    </div>*@
+
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input name="Title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Title">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Province</label>
+        <input name="Province" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Province">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">District</label>
+        <input name="District" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="District">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Detail</label>
+        <input name="Detail" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Detail">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">PostalCode</label>
+        <input name="PostalCode" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="PostalCode">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

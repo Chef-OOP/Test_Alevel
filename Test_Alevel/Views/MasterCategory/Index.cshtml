@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Test_Alevel.DTOs.MasterCategoryDto>
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<h1>Master Category Name</h1>
+<hr />
+<br />
+@if (true)
+{
+
+}
+@if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        <h4>@item.Name</h4>
+    }
+
+}
+else
+{
+    <h2>Model Empty</h2>  
+}
